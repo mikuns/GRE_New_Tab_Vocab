@@ -1,0 +1,42 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #2c3238;
+	font-family: 'Old Standard TT', serif;
+	background: #fdfdfd;
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+}
+.vocab {
+	text-align: center;
+	width: 40rem;
+	margin: auto;
+}
+.vocab__word {
+	font-size: 4rem;
+	font-weight: 700;
+	line-height: 1;
+	margin: 1rem 0;
+}
+.vocab__passage {
+	font-size: 1.5rem;
+	margin: 1.5rem 0 2rem;
+}
+.vocab__definition {
+	font-size: 1rem;
+	font-style: italic;
+	margin: 1rem auto;
+	width: 30rem;
+}
+.vocab__hr {
+	border: none;
+	border-top: 1px solid #d7dbe0;
+	outline: none;
+	margin: 1rem auto;
+	width: 2rem;
+}
+.vocab__loading {
+	font-size: 1.25rem;
+}
