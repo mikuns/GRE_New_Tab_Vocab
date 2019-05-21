@@ -8,7 +8,7 @@ async function main() {
     if (localStorage.GRE_VOCABULARY) {
         words = JSON.parse(localStorage.GRE_VOCABULARY)
     } else {
-        const res = await fetch(GRE_VOCABULARY_ENDPOINT, { headers: { accept: 'application/json' } })
+        const res = await fetch(GRE_VOCABULARY_ENDPOINT, { headers: { accept: 'application/json' } });
         words = await res.json();
 
         // Cache for later
@@ -19,6 +19,7 @@ async function main() {
         word,
         pronunciation,
         definition,
+        synonyms,
         passage,
         partOfSpeech,
     } = words[Math.floor(Math.random() * words.length)];
@@ -41,6 +42,9 @@ async function main() {
       <p class='vocab__definition'>
         ${pronunciation} [${partOfSpeech}] &ndash; ${definition}
       </p>
+      <em class='vocab__synonym'>
+        Synonym - ${synonyms}
+      </em>
     </div>
   `;
 
@@ -56,10 +60,4 @@ async function main() {
     });
 }
 
-const init = _ => {
-
-	browser.storage.sync.get(null)
-		.then( main );
-};
-
-init();
+main();
