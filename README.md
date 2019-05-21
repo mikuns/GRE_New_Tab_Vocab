@@ -4,4 +4,4 @@ The GRE New Tab Vocab is a browser extension that serves as a learning platform 
 
 # Screenshot
 
-[alt text](http://url/to/gre_voc.png)
+[alt text](https://github.com/mikuns/GRE_Vocab_Firefox_Extension/blob/master/gre_voc.PNG)
