@@ -1,4 +1,4 @@
-// Reference: https://github.com/MethodGrab/firefox-custom-new-tab-page
+// Reference: https://github.com/ezekg/chrome-new-tab-vocab
 
 const GRE_VOCABULARY_ENDPOINT = `https://gre.economist.com/gre-vocabulary.json`
 
